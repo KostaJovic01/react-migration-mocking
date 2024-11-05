@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Sidebar from "@/app/components/AppLayout";
+import Hamburger from "@/app/components/Hamburger";
 
 export default function Home() {
   return (
