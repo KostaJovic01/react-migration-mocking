@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 
 import KostaJImage from "@/app/assets/KostaJ.jpg";
@@ -9,6 +9,16 @@ import EditIcon from "@/app/assets/EditIcon";
 import Modal from "@/app/components/molecules/Modal";
 import FormInput from "@/app/components/molecules/FormInput";
 import Dropdown from "@/app/components/molecules/Dropdown";
+import { useDispatch } from "react-redux";
+import { setUserStore } from "@/app/redux/userSlice";
+import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
+type User = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  language: string;
+  image?: StaticImageData;
+};
 
 type Props = {};
 const Page = (props: Props) => {
@@ -21,6 +31,16 @@ const Page = (props: Props) => {
     image: KostaJImage,
   });
   const [tempUser, setTempUser] = useState(user);
+
+  const dispatch = useAppDispatch();
+  const updateUserStore = (inputUser: User) => {
+    dispatch(setUserStore(inputUser));
+  };
+  const userStore = useAppSelector((state) => state.userStore);
+
+  useEffect(() => {
+    updateUserStore(user);
+  }, [user]);
 
   return (
     <div className={"relative flex h-screen flex-col"}>
