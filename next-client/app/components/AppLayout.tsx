@@ -68,7 +68,7 @@ export default function AppLayout(props: Props) {
                 </Dialog>
 
                 {/* Static sidebar for desktop */}
-                <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+                <div className="hidden lg:inset-y-0 lg:flex lg:w-72 lg:flex-col">
                     {/* Sidebar component, swap this element with another sidebar if you like */}
                     <Sidebar user={user} navigation={navigation} teams={teams} handleNavigationClick={handleNavigationClick} />
                 </div>
@@ -84,7 +84,7 @@ export default function AppLayout(props: Props) {
                     </button>
                 </div>
 
-                <main>
+                <main className={'grow'}>
                     {props.children}
                 </main>
             </div>

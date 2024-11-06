@@ -27,7 +27,7 @@ const Sidebar = (props: Props) => {
                     <li>
                         <ul role="list">
                             {teams.map((team) => (
-                                <SidebarFooterItem team={team} />
+                                <SidebarFooterItem team={team} key={team.name}/>
                             ))}
                             <UserNavItem user={user}/>
                         </ul>
