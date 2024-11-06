@@ -1,3 +1,20 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next", "next/core-web-vitals", "plugin:prettier/recommended"],
+  "settings": {},
+  "parserOptions": {},
+  "parser": "",
+  "globals": {},
+  "root": false,
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "overrides": [],
+  "env": {},
+  "noInlineConfig": false,
+  "ecmaFeatures": {}
 }

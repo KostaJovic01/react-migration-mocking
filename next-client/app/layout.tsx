@@ -26,11 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body>
-          <AppLayout>
-            {children}
-          </AppLayout>
-        </body>
+      <body>
+        <AppLayout>{children}</AppLayout>
+      </body>
     </html>
   );
 }
