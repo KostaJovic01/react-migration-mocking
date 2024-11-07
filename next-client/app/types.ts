@@ -9,7 +9,7 @@ export type User = {
   image?: StaticImageData;
 };
 
-// Interface for the person making the enquiry
+// type for the person making the enquiry
 export type Person = {
   givenName: string;
   familyName: string;
@@ -21,7 +21,7 @@ export type Person = {
   fullname: string;
 };
 
-// Interface for tracking information
+// type for tracking information
 export type Tracking = {
   source: string;
   entryPage: string;
@@ -29,26 +29,26 @@ export type Tracking = {
   cooperationMedium?: string; // Optional
 };
 
-// Interface for email receivers in status
+// type for email receivers in status
 export type EmailReceiver = {
   name: string;
   status: boolean;
   lastUpdate: string; // ISO date format
 };
 
-// Interface for autoresponder in status
+// type for autoresponder in status
 export type Autoresponder = {
   name: string;
   status: boolean;
   lastUpdate: string; // ISO date format
 };
 
-// Interface for establishments in status
+// type for establishments in status
 export type Establishment = {
   name: string;
 };
 
-// Interface for enquiry status
+// type for enquiry status
 export type Status = {
   text: string;
   emailReceivers: EmailReceiver[];
@@ -59,7 +59,7 @@ export type Status = {
   mtsEstablishments?: Establishment[]; // Optional
 };
 
-// Interface for room stays in an enquiry
+// type for room stays in an enquiry
 export type RoomStay = {
   roomClassificationCode: string | number; // Some are strings, others are numbers
   roomType?: string; // Optional
@@ -77,7 +77,7 @@ export type RoomStay = {
   endDate: string; // ISO date format with timezone info
 };
 
-// Main interface for an enquiry object
+// Main type for an enquiry object
 export type Enquiry = {
   id: string;
   title: string;
@@ -91,7 +91,7 @@ export type Enquiry = {
   channelName?: string; // Channel name is optional.
 };
 
-// Root interface that contains all enquiries.
+// Root type that contains all enquiries.
 export type EnquiriesData = {
   enquiries: Enquiry[];
 };
