@@ -41,9 +41,9 @@ export function makeServer({ environment = "development" } = {}) {
         };
       });
       this.get("/inquiries", (schema: AppSchema) => {
-        const user = generateFakeEnquiries(3);
+        const enquiries = generateFakeEnquiries(3);
         return {
-          user,
+          enquiries,
         };
       });
     },
