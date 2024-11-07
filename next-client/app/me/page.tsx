@@ -9,26 +9,19 @@ import EditIcon from "@/app/assets/EditIcon";
 import Modal from "@/app/components/molecules/Modal";
 import FormInput from "@/app/components/molecules/FormInput";
 import Dropdown from "@/app/components/molecules/Dropdown";
-import { useDispatch } from "react-redux";
 import { setUserStore } from "@/app/redux/userSlice";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
-type User = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  language: string;
-  image?: StaticImageData;
-};
+import { User } from "@/app/types";
 
 type Props = {};
 const Page = (props: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [user, setUser] = useState({
-    firstName: "Kosta",
-    lastName: "Jovic",
-    email: "kosta.jovic@additive.eu",
-    language: "English",
-    image: KostaJImage,
+  const [user, setUser] = useState<User>({
+    id: 0,
+    firstName: "",
+    lastName: "",
+    email: "",
+    language: "",
   });
   const [tempUser, setTempUser] = useState(user);
 
@@ -39,6 +32,16 @@ const Page = (props: Props) => {
   const userStore = useAppSelector((state) => state.userStore);
 
   useEffect(() => {
+    fetch("/api/user")
+      .then((response) => response.json())
+      .then((data) => {
+        setUser(data.user);
+        setTempUser(data.user);
+      });
+  }, []);
+
+  useEffect(() => {
+    console.table(user);
     updateUserStore(user);
   }, [user]);
 
@@ -53,7 +56,7 @@ const Page = (props: Props) => {
         <div className={"flex min-h-max flex-col items-center md:flex-row"}>
           <Image
             alt={`${user.firstName}'s profile`}
-            src={user.image}
+            src={user.image ? user.image : KostaJImage}
             className="h-[88px] w-[88px] rounded-full"
           />
           <div

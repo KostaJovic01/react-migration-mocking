@@ -4,6 +4,11 @@ import store from "@/app/redux/store";
 import localFont from "next/font/local";
 import "./globals.css";
 import AppLayout from "@/app/components/AppLayout";
+import { makeServer } from "@/app/mirage/server";
+
+if (process.env.NODE_ENV === "development") {
+  makeServer({ environment: "development" });
+}
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
