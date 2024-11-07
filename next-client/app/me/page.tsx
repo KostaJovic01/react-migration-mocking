@@ -17,7 +17,7 @@ type Props = {};
 const Page = (props: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState<User>({
-    id: 0,
+    id: "0",
     firstName: "",
     lastName: "",
     email: "",

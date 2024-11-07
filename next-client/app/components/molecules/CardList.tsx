@@ -1,7 +1,4 @@
-const items = [
-  { id: 1 },
-  // More items...
-];
+const items = [{ id: 1 }];
 
 type Props = {};
 const CardList = (props: Props) => {
@@ -12,6 +9,7 @@ const CardList = (props: Props) => {
           key={item.id}
           className="overflow-hidden rounded-md bg-white px-6 py-4 shadow"
         >
+          KOSTA TEST
           {/* Your content */}
         </li>
       ))}

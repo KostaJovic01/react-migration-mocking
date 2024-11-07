@@ -2,6 +2,7 @@ import { createServer, Model, Registry } from "miragejs";
 import { ModelDefinition } from "miragejs/-types";
 import Schema from "miragejs/orm/schema";
 import { User } from "@/app/types";
+import { generateFakeEnquiries } from "@/app/api/inquiries/route";
 
 type AppRegistry = Registry<{ user: ModelDefinition<User> }, {}>;
 type AppSchema = Schema<AppRegistry>;
@@ -35,6 +36,12 @@ export function makeServer({ environment = "development" } = {}) {
           language: "English",
           email: "kosta.jovic@additive.eu",
         };
+        return {
+          user,
+        };
+      });
+      this.get("/inquiries", (schema: AppSchema) => {
+        const user = generateFakeEnquiries(3);
         return {
           user,
         };
