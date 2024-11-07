@@ -23,7 +23,7 @@ const NavItem = (props: Props) => {
         className={classNames(
           data.current
             ? "relative text-blue-300 before:absolute before:left-0 before:top-1/4 before:flex before:h-1/2 before:w-1 before:items-center before:justify-center before:rounded-r-full before:bg-blue-300"
-            : "text-gray-600 hover:bg-gray-800 hover:text-white",
+            : "text-gray-600 hover:bg-gray-300",
           "group flex gap-x-3 rounded-md px-6 py-2 text-sm/6 font-semibold",
         )}
       >
