@@ -1,9 +1,11 @@
 // redux/store.ts
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./userSlice";
+import inquiryReducer from "./inquirySlice";
 const store = configureStore({
   reducer: {
-    userStore: userReducer,
+    userState: userReducer,
+    inquiryState: inquiryReducer,
   },
 });
 

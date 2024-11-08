@@ -59,7 +59,7 @@ const createFakeStatus = (): Status => {
   };
 
   return {
-    text: faker.helpers.arrayElement(["pending", "success", "failed"]),
+    text: faker.helpers.arrayElement(["approved", "pending", "error"]),
     emailReceivers,
     autoresponder,
   };

@@ -1,0 +1,2211 @@
+{
+  "enquiries": [
+    {
+      "id": "6728cbbe06f9fa457b02e9e2",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein8?"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "hannah.punter@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-11-04T14:28:08+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-11-04T14:28:09+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-11-04T14:27:26+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-11-04T00:00:00+0100",
+          "endDate": "2024-11-11T00:00:00+0100"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "67221b5efbdf60668a0dc072",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein9"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "hannah.punter@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-30T12:41:56+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-30T12:41:55+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-30T12:41:18+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-10-31T00:00:00+0100",
+          "endDate": "2024-11-01T00:00:00+0100"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "6720a80497555a12f00ddbf9",
+      "title": "Anfrage Landingpage Testhotel Post: Hannah Punter - hannah.punter@additive.eu",
+      "language": "en",
+      "person": {
+        "givenName": "Jae",
+        "familyName": "Doe",
+        "gender": "f",
+        "language": "en",
+        "email": "hannah.punter@additive.eu",
+        "newsletter": false,
+        "fullname": "Jae Doe"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "hannah.punter@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-29T10:17:25+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "hannah.punter@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-29T10:17:25+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-29T10:16:52+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 1
+          },
+          "startDate": "2024-08-01T00:00:00+0200",
+          "endDate": "2024-08-02T00:00:00+0200"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "6720a7d497555a12f00ddbf2",
+      "title": "Anfrage Landingpage Testhotel Post: Hannah Punter - hannah.punter@additive.eu",
+      "language": "en",
+      "person": {
+        "givenName": "Ann",
+        "familyName": "Unt",
+        "gender": "f",
+        "language": "de",
+        "email": "hannah.punter@additive.eu",
+        "newsletter": false,
+        "fullname": "Ann Unt"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "hannah.punter@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-29T10:16:39+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "hannah.punter@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-29T10:16:39+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-29T10:16:04+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 1
+          },
+          "startDate": "2024-09-01T00:00:00+0200",
+          "endDate": "2024-09-02T00:00:00+0200"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "6720a0eefb1c0f0c8f0a2ac3",
+      "title": "Anfrage Landingpage Testhotel Post: Hannah Punter - hannah.punter@additive.eu",
+      "language": "en",
+      "person": {
+        "givenName": "Anna",
+        "familyName": "Unter",
+        "gender": "f",
+        "language": "de",
+        "email": "hannah.punter@additive.eu",
+        "newsletter": false,
+        "fullname": "Anna Unter"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-29T09:47:14+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "hannah.punter@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-29T09:47:15+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-29T09:46:38+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 1
+          },
+          "startDate": "2024-10-01T00:00:00+0200",
+          "endDate": "2024-10-02T00:00:00+0200"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "671f88879f9ac8e0b70e8df2",
+      "title": "Anfrage Landingpage Testhotel Post: Hannah Punter - hannah.punter@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Hannah",
+        "familyName": "Punter",
+        "gender": "f",
+        "language": "de",
+        "email": "hannah.punter@additive.eu",
+        "newsletter": false,
+        "fullname": "Hannah Punter"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-28T13:50:51+01:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "hannah.punter@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-28T13:50:52+01:00"
+        },
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-28T13:50:15+01:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-10-29T00:00:00+0100",
+          "endDate": "2024-10-30T00:00:00+0100"
+        }
+      ],
+      "channelName": "Testkanal 12345"
+    },
+    {
+      "id": "66ffebc965726e497e02e642",
+      "title": "Anfrage Landingpage Testhotel Post: aaa aa - mattia.mancina+121212221@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "aaa",
+        "familyName": "aa",
+        "gender": "m",
+        "language": "de",
+        "email": "mattia.mancina+121212221@additive.eu",
+        "telephone": "12121212",
+        "newsletter": true,
+        "fullname": "aaa aa"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-10-04T15:21:49+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "mattia.mancina+121212221@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-10-04T15:21:50+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-10-04T15:21:13+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-10-04T00:00:00+0200",
+          "endDate": "2024-10-11T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66dfe389addffa96ca0213a2",
+      "title": "Anfrage Landing Page: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Valentin",
+        "familyName": "Federer",
+        "gender": "m",
+        "language": "de",
+        "email": "valentin.federer@additive.eu",
+        "newsletter": false,
+        "fullname": "Valentin Federer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "http:\/\/localhost:8000\/template\/form\/framed",
+        "cooperationSource": "afsdfasdfasdf",
+        "cooperationMedium": "landingpageee"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-09-10T08:14:03+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-09-10T08:14:04+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-09-10T08:14:05+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-09-10T08:13:29+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2023-06-20T00:00:00+0200",
+          "endDate": "2023-06-27T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "66d6d530b11c48fba20a6449",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Testanfrage",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "telephone": "0473538800",
+        "newsletter": true,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-09-03T11:22:26+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-09-03T11:22:29+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-09-03T11:21:52+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "roomType": "asdf'adsf",
+          "roomTypeDescription": "Familienzimmer \"Family Time\"",
+          "ratePlan": "asdf20",
+          "ratePlanDescription": "4 = 3, da sind wir dabei",
+          "adults": {
+            "count": 2
+          },
+          "children": {
+            "count": 2,
+            "ages": [
+              "15",
+              "10"
+            ]
+          },
+          "startDate": "2024-09-03T00:00:00+0200",
+          "endDate": "2024-09-29T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66d6d511b11c48fba20a6442",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Testanfrage",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "telephone": "0473538800",
+        "newsletter": true,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-09-03T11:21:56+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-09-03T11:21:57+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-09-03T11:21:21+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "roomType": "asdf'adsf",
+          "roomTypeDescription": "Familienzimmer \"Family Time\"",
+          "ratePlan": "asdf20",
+          "ratePlanDescription": "4 = 3, da sind wir dabei",
+          "adults": {
+            "count": 2
+          },
+          "children": {
+            "count": 2,
+            "ages": [
+              "15",
+              "10"
+            ]
+          },
+          "startDate": "2024-09-03T00:00:00+0200",
+          "endDate": "2024-09-29T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66bf3d70a11d2e8a410e2ef2",
+      "title": "Anfrage Landingpage Testhotel Post: max maier - hqwyfppdajmsidjxre@hthlm.com",
+      "language": "de",
+      "person": {
+        "givenName": "max",
+        "familyName": "maier",
+        "gender": "m",
+        "language": "de",
+        "email": "hqwyfppdajmsidjxre@hthlm.com",
+        "telephone": "323233323",
+        "newsletter": true,
+        "fullname": "max maier"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-16T13:52:57+02:00"
+          },
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-16T13:52:58+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "hqwyfppdajmsidjxre@hthlm.com",
+          "status": true,
+          "lastUpdate": "2024-08-16T13:52:59+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-16T13:52:16+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-16T00:00:00+0200",
+          "endDate": "2024-08-23T00:00:00+0200"
+        }
+      ],
+      "channelName": "test2-neu"
+    },
+    {
+      "id": "66bb7c90195a405536028472",
+      "title": "Anfrage Landingpage Testhotel Post: sdfsf dsfsdfs - putzerpeter12@gmail.com",
+      "language": "en",
+      "text": "sdfsdfs",
+      "person": {
+        "givenName": "sdfsf",
+        "familyName": "dsfsdfs",
+        "gender": "m",
+        "language": "en",
+        "email": "putzerpeter12@gmail.com",
+        "telephone": "123456789",
+        "newsletter": false,
+        "fullname": "sdfsf dsfsdfs"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/en\/general6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-13T17:33:14+02:00"
+          },
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-13T17:33:15+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "putzerpeter12@gmail.com",
+          "status": true,
+          "lastUpdate": "2024-08-13T17:33:16+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-13T17:32:32+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-13T00:00:00+0200",
+          "endDate": "2024-08-20T00:00:00+0200"
+        }
+      ],
+      "channelName": "test2-neu"
+    },
+    {
+      "id": "66b9b217ffab72c378089c89",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Test",
+      "person": {
+        "givenName": "Robert1",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert1 Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-12T08:56:56+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-08-12T08:56:57+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-12T08:56:23+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-12T00:00:00+0200",
+          "endDate": "2024-08-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66b9b207ffab72c378089c82",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Test",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-12T08:56:42+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-08-12T08:56:43+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-12T08:56:07+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-12T00:00:00+0200",
+          "endDate": "2024-08-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66b9ad582ab122a47d0ac070",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Test",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-12T08:36:42+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-08-12T08:36:43+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-12T08:36:08+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-12T00:00:00+0200",
+          "endDate": "2024-08-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66b9acdb2ab122a47d0ac069",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Test",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-12T08:34:36+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-08-12T08:34:37+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-12T08:34:03+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": 42,
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-12T00:00:00+0200",
+          "endDate": "2024-08-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66b9acc42ab122a47d0ac062",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "text": "Test",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-08-12T08:34:23+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-08-12T08:34:22+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-08-12T08:33:40+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-08-12T00:00:00+0200",
+          "endDate": "2024-08-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66a8ea22a8c02962e20fedc2",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer+1@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-07-30T15:27:32+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-07-30T15:27:33+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-07-30T15:26:58+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-07-30T00:00:00+0200",
+          "endDate": "2024-08-06T00:00:00+0200"
+        }
+      ],
+      "channelName": "casa"
+    },
+    {
+      "id": "66421e9f7c55b94b090fa17e",
+      "title": "Anfrage Landingpage Testhotel Post: Stefan Gasser - stefan.gasser@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Stefan",
+        "familyName": "Gasser",
+        "language": "de",
+        "email": "stefan.gasser@additive.eu",
+        "newsletter": false,
+        "fullname": "Stefan Gasser"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "stefan.gasser@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T16:07:27+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "\"SBK'",
+          "ratePlanDescription": "Spring \\Break with fancy Code",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "66421e3e7c55b94b090fa177",
+      "title": "Anfrage Landingpage Testhotel Post: Stefan Gasser - stefan.gasser@additive.eu",
+      "language": "de",
+      "text": "123",
+      "person": {
+        "givenName": "Stefan",
+        "familyName": "Gasser",
+        "gender": "m",
+        "language": "de",
+        "email": "stefan.gasser@additive.eu",
+        "newsletter": false,
+        "fullname": "Stefan Gasser"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "stefan.gasser@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T16:05:50+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "Spring Break",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "66421da17c55b94b090fa170",
+      "title": "Anfrage Landingpage Testhotel Post: Stefan Gasser - stefan.gasser@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Stefan",
+        "familyName": "Gasser",
+        "gender": "m",
+        "language": "de",
+        "email": "stefan.gasser@additive.eu",
+        "newsletter": false,
+        "fullname": "Stefan Gasser"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "stefan.gasser@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T16:03:13+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "roomType": "LSG",
+          "roomTypeDescription": "Living Suite Garden f\u00fcr Aktive",
+          "ratePlan": "Spring Break",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "66421b407c55b94b090fa169",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T15:53:04+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlanDescription": "Spring \\Break with fancy Code",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "66421b3f7c55b94b090fa162",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T15:53:03+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "\"SBK'",
+          "ratePlanDescription": "Spring \\Break with fancy Code",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "664215ede5af9d0a79027259",
+      "title": "Anfrage Landingpage Testhotel Post: Robert Bierbauer - robert.bierbauer@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Robert",
+        "familyName": "Bierbauer",
+        "gender": "m",
+        "language": "de",
+        "email": "robert.bierbauer@additive.eu",
+        "newsletter": false,
+        "fullname": "Robert Bierbauer"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein7"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu"
+          }
+        ],
+        "autoresponder": {
+          "name": "robert.bierbauer@additive.eu"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-13T15:30:21+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "\"SBK'",
+          "ratePlanDescription": "Spring \\Break with fancy Code",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-13T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "6633a6103b51abc41a02a392",
+      "title": "Anfrage Landingpage Testhotel Post: Francesco Ercoli - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Francesco",
+        "familyName": "Ercoli",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "Francesco Ercoli"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-05-02T16:41:56+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-05-02T16:41:57+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-05-02T16:41:58+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": true,
+            "lastUpdate": "2024-05-02T16:41:24+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-05-02T16:41:20+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-02T00:00:00+0200",
+          "endDate": "2024-05-09T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "663369467fd7d8f1e8021d32",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "robert.bierbauer@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-05-02T12:22:34+02:00"
+          }
+        ],
+        "autoresponder": {
+          "name": "francesco.ercoli@additive.eu",
+          "status": true,
+          "lastUpdate": "2024-05-02T12:22:33+02:00"
+        },
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-05-02T12:21:58+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-05-02T00:00:00+0200",
+          "endDate": "2024-05-09T00:00:00+0200"
+        }
+      ],
+      "channelName": "Test!"
+    },
+    {
+      "id": "6628bd42781b410670063c02",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-24T10:05:57+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-24T10:05:58+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-24T10:05:59+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": true,
+            "lastUpdate": "2024-04-24T10:05:25+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-24T10:05:22+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-24T00:00:00+0200",
+          "endDate": "2024-05-01T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6620c97a0788cac3d20e1cfa",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:19:58+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:19:59+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:20:00+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:19:26+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-18T09:19:22+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-18T00:00:00+0200",
+          "endDate": "2024-04-25T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6620c8f30788cac3d20e1cf2",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:17:43+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:17:44+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-18T09:17:45+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-18T09:17:11+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-18T09:17:07+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-18T00:00:00+0200",
+          "endDate": "2024-04-25T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "661f8a06c4ede82f9e00b0ba",
+      "title": "Anfrage Landingpage Testhotel Post: Stefan Gasser - stefan.gasser@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Stefan",
+        "familyName": "Gasser",
+        "gender": "m",
+        "language": "de",
+        "email": "stefan.gasser@additive.eu",
+        "newsletter": true,
+        "fullname": "Stefan Gasser"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein5"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:36:58+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:36:58+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:36:59+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-04-17T10:36:22+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "Spring \\Break",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-17T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "661f89c3c4ede82f9e00b0b2",
+      "title": "Anfrage Landingpage Testhotel Post: Stefan Gasser - stefan.gasser@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Stefan",
+        "familyName": "Gasser",
+        "gender": "m",
+        "language": "de",
+        "email": "stefan.gasser@additive.eu",
+        "newsletter": true,
+        "fullname": "Stefan Gasser"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein5",
+        "cooperationSource": "afsdfasdfasdf",
+        "cooperationMedium": "landingpageee"
+      },
+      "status": {
+        "text": "success",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:35:49+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:35:49+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-17T10:35:51+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-04-17T10:35:15+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "ratePlan": "Spring \\Break",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-17T00:00:00+0200",
+          "endDate": "2024-05-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "661cd69ee2eb13b16c0e53ba",
+      "title": "Anfrage Landingpage Testhotel Post: casa test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "casa",
+        "familyName": "test",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "casa test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:26:57+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:26:58+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:26:59+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": []
+      },
+      "createdAt": "2024-04-15T09:26:22+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-15T00:00:00+0200",
+          "endDate": "2024-04-22T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "661cd5e1e2eb13b16c0e53b2",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "gender": "f",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:23:48+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:23:49+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-15T09:23:50+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-15T09:23:16+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-15T09:23:13+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-15T00:00:00+0200",
+          "endDate": "2024-04-22T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6618e3fbb0656cd9190cf912",
+      "title": "Anfrage Landingpage Testhotel Post: test Man - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "Man",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test Man"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:34:54+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:34:55+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:34:56+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-12T09:34:22+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-12T09:34:19+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-12T00:00:00+0200",
+          "endDate": "2024-04-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6618e2a015af634a8f068dfa",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "gender": "m",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:29:08+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:29:09+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:29:10+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-12T09:28:36+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-12T09:28:32+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-12T00:00:00+0200",
+          "endDate": "2024-04-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6618e1e015af634a8f068df2",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:25:56+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:25:57+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-12T09:25:58+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-12T09:25:25+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-12T09:25:20+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-12T00:00:00+0200",
+          "endDate": "2024-04-19T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "6616986b288b21221c0cf8b2",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:47:56+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:47:57+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:47:58+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-10T15:47:26+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-10T15:47:23+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-10T00:00:00+0200",
+          "endDate": "2024-04-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "66168f53898f4116bf0cf152",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:09:07+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:09:08+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T15:09:09+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-10T15:08:37+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-10T15:08:35+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-10T00:00:00+0200",
+          "endDate": "2024-04-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "66168cb42247ed2ccb051872",
+      "title": "Anfrage Landingpage Testhotel Post: test test - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "test",
+        "familyName": "test",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "test test"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein6"
+      },
+      "status": {
+        "text": "failure",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T14:58:00+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T14:58:00+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-10T14:58:01+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": false,
+            "lastUpdate": "2024-04-10T14:57:27+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-10T14:57:24+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-10T00:00:00+0200",
+          "endDate": "2024-04-17T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    },
+    {
+      "id": "660fe14c3796cccc8f0a6472",
+      "title": "Anfrage Landingpage Testhotel Post: Francesco Ercoli - francesco.ercoli@additive.eu",
+      "language": "de",
+      "person": {
+        "givenName": "Francesco",
+        "familyName": "Ercoli",
+        "language": "de",
+        "email": "francesco.ercoli@additive.eu",
+        "newsletter": false,
+        "fullname": "Francesco Ercoli"
+      },
+      "tracking": {
+        "source": "direct",
+        "entryPage": "https:\/\/staging-testhotel.additiveandbeyond.com\/de\/allgemein5"
+      },
+      "status": {
+        "text": "pending",
+        "emailReceivers": [
+          {
+            "name": "stefan.gasser@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-05T13:33:03+02:00"
+          },
+          {
+            "name": "francesco.ercoli@additive.eu",
+            "status": true,
+            "lastUpdate": "2024-04-05T13:33:04+02:00"
+          },
+          {
+            "name": "dev@additive-apps.eu",
+            "status": true,
+            "lastUpdate": "2024-04-05T13:33:05+02:00"
+          }
+        ],
+        "alpinebitsEstablishments": [
+          {
+            "name": "Testhotel Post "
+          }
+        ],
+        "casablancaEstablishments": [],
+        "reGuestEstablishments": [],
+        "mtsEstablishments": [
+          {
+            "name": "Testhotel Post ",
+            "status": true,
+            "lastUpdate": "2024-04-05T13:32:31+02:00"
+          }
+        ]
+      },
+      "createdAt": "2024-04-05T13:32:28+02:00",
+      "roomStays": [
+        {
+          "roomClassificationCode": "42",
+          "adults": {
+            "count": 2
+          },
+          "startDate": "2024-04-05T00:00:00+0200",
+          "endDate": "2024-04-12T00:00:00+0200"
+        }
+      ],
+      "channelName": "kanal neu! MTS"
+    }
+  ],
+  "meta": {
+    "currentPage": 1,
+    "from": 1,
+    "to": 40,
+    "perPage": 40,
+    "total": 646,
+    "lastPage": 17
+  }
+}

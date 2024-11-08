@@ -13,12 +13,8 @@ const userStoreSlice = createSlice({
   name: "userStore",
   initialState,
   reducers: {
-    setUserStore(state, action) {
-      state.firstName = action.payload.firstName;
-      state.lastName = action.payload.lastName;
-      state.email = action.payload.email;
-      state.language = action.payload.language;
-    },
+    setUserStore: (state, action) =>
+      Object.assign(state, { ...action.payload }),
   },
 });
 

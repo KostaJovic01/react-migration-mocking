@@ -29,7 +29,7 @@ const Page = (props: Props) => {
   const updateUserStore = (inputUser: User) => {
     dispatch(setUserStore(inputUser));
   };
-  const userStore = useAppSelector((state) => state.userStore);
+  const userStore = useAppSelector((state) => state.userState);
 
   useEffect(() => {
     fetch("/api/user")
@@ -112,21 +112,23 @@ const Page = (props: Props) => {
             label={"First Name"}
             value={tempUser.firstName}
             setValue={(firstName) =>
-              setTempUser({ ...user, firstName: firstName })
+              setTempUser({ ...tempUser, firstName: firstName })
             }
           />
           <FormInput
             label={"Last Name"}
             value={tempUser.lastName}
             setValue={(lastName) =>
-              setTempUser({ ...user, lastName: lastName })
+              setTempUser({ ...tempUser, lastName: lastName })
             }
           />
           <Dropdown
             label={"Language"}
             optionSelected={tempUser.language}
             options={["English", "German"]}
-            setOption={(option) => setTempUser({ ...user, language: option })}
+            setOption={(option) =>
+              setTempUser({ ...tempUser, language: option })
+            }
           />
           <div className="mt-5 flex flex-row justify-end">
             <button
