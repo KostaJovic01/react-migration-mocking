@@ -3,6 +3,8 @@ import { ModelDefinition } from "miragejs/-types";
 import Schema from "miragejs/orm/schema";
 import { User } from "@/app/types";
 import { generateFakeEnquiries } from "@/app/api/inquiries/route";
+import { useAppDispatch } from "@/app/redux/hooks";
+import { setInquiryStore } from "@/app/redux/inquirySlice";
 
 type AppRegistry = Registry<{ user: ModelDefinition<User> }, {}>;
 type AppSchema = Schema<AppRegistry>;
@@ -41,7 +43,7 @@ export function makeServer({ environment = "development" } = {}) {
         };
       });
       this.get("/inquiries", (schema: AppSchema) => {
-        const enquiries = generateFakeEnquiries(3);
+        const enquiries = generateFakeEnquiries(6);
         return {
           enquiries,
         };

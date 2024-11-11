@@ -15,7 +15,7 @@ const initialState: EnquiriesData = {
         fullname: "",
       },
       status: {
-        text: "",
+        text: "pending",
         emailReceivers: [],
         autoresponder: {
           name: "",

@@ -1,8 +1,10 @@
+import React from "react";
+
 type Props = {
   status: "approved" | "pending" | "error" | undefined;
 };
 
-const StatusBall = (props: Props) => {
+const StatusBall = React.memo((props: Props) => {
   const color = () => {
     switch (props.status) {
       case "pending":
@@ -21,6 +23,6 @@ const StatusBall = (props: Props) => {
       className={`h-2 w-2 rounded-full bg-${color()}-500`}
     />
   );
-};
+});
 
 export default StatusBall;

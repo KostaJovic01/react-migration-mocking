@@ -9,6 +9,7 @@ import {
   FolderIcon,
   UsersIcon,
   EllipsisVerticalIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 import CallBellIcon from "@/app/assets/CallBellIcon";
 import ElipsisSquareIcon from "@/app/assets/ElipsisSquareIcon";
@@ -38,7 +39,12 @@ export default function AppLayout(props: Props) {
       icon: DocumentDuplicateIcon,
       current: false,
     },
-    { name: "Reports", href: "#", icon: ChartPieIcon, current: false },
+    {
+      name: "Settings",
+      href: "/settings",
+      icon: Cog6ToothIcon,
+      current: false,
+    },
   ]);
   const [teams, setTeams] = useState([
     {
