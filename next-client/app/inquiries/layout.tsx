@@ -27,17 +27,13 @@ const Layout = React.memo((props: Props) => {
     }
   }, [dispatch]); // Only recreate if dispatch changes
 
-  const toggleDetailView = useCallback(() => {
-    setDetailOpen((prev) => !prev);
-  }, []);
-
   return (
-    <div className={"flex h-screen flex-col p-6 py-32"}>
-      <div className="hidden bg-blue-300 bg-blue-500 bg-orange-300 bg-orange-500 bg-red-300 bg-red-500"></div>
-      <h1 className="text-xl">Inquiries</h1>
-      <button onClick={fetchInquiries}>Fetch Inquiries</button>
-      <div className={"flex flex-row"}>
-        <ul role="list" className="w-full space-y-3">
+    <div className={"relative flex h-screen flex-grow flex-row"}>
+      <div className={"flex h-screen min-w-[40%] flex-grow flex-col p-6 pt-32"}>
+        <div className="hidden bg-blue-300 bg-blue-500 bg-green-300 bg-green-500 bg-orange-300 bg-orange-500 bg-red-300 bg-red-500"></div>
+        <h1 className="text-xl">Inquiries</h1>
+        <button onClick={fetchInquiries}>Fetch Inquiries</button>
+        <ul role="list" className="over w-full space-y-3">
           {inquiries &&
             inquiries.enquiries.map((item: Enquiry) => (
               <Link
@@ -48,10 +44,7 @@ const Layout = React.memo((props: Props) => {
                 }
               >
                 <div className={"flex h-5 w-5 items-center justify-center"}>
-                  <div
-                    id={"status ball"}
-                    className={`h-2 w-2 rounded-full bg-red-500`}
-                  />
+                  <StatusBall status={item.status.text} />
                 </div>
                 <div
                   id={"listItemData"}
@@ -70,8 +63,8 @@ const Layout = React.memo((props: Props) => {
               </Link>
             ))}
         </ul>
-        <div className={`${detailOpen ? "" : "w-0"}`}>{props.detail}</div>
       </div>
+      {props.detail}
     </div>
   );
 });

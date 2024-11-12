@@ -41,7 +41,9 @@ const Page = (props: Props) => {
   }, [inquiriesState, id]);
 
   return (
-    <div className="relative flex flex-col">
+    <div
+      className={`${inquiry ? "w-full px-6" : "invisible w-0 px-0"} relative flex h-screen flex-col py-32`}
+    >
       <Modal open={isModalOpen} setOpen={setIsModalOpen}>
         <div className="text-md">Delete</div>
         <div className="text-sm">

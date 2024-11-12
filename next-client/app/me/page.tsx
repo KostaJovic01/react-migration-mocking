@@ -32,13 +32,20 @@ const Page = (props: Props) => {
   const userStore = useAppSelector((state) => state.userState);
 
   useEffect(() => {
-    fetch("/api/user")
-      .then((response) => response.json())
-      .then((data) => {
-        setUser(data.user);
-        setTempUser(data.user);
-      });
+    fetchUser();
   }, []);
+
+  const fetchUser = async () => {
+    try {
+      const response = await fetch("/api/user", { cache: "force-cache" });
+      const data = await response.json();
+      setUser(data.user);
+      setTempUser(data.user);
+      updateUserStore(data.user);
+    } catch (error) {
+      console.error("Error fetching user:", error);
+    }
+  };
 
   useEffect(() => {
     console.table(user);

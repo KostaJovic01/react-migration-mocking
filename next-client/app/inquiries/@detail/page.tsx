@@ -1,5 +1,5 @@
 type Props = {};
 const Page = (props: Props) => {
-  return <div>Detail</div>;
+  return <div></div>;
 };
 export default Page;

@@ -137,7 +137,7 @@ export default function AppLayout(props: Props) {
           </button>
         </div>
 
-        <main className={"grow"}>{props.children}</main>
+        <main className={"flex grow"}>{props.children}</main>
       </div>
     </>
   );
