@@ -3,6 +3,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 export const dynamic = "force-static";
 import { User } from "@/app/types";
 import { faker } from "@faker-js/faker";
+import { NextRequest, NextResponse } from "next/server";
 
 const languages = ["English", "German", "Spanish", "French", "Italian"];
 
@@ -16,11 +17,12 @@ const createFakeUser = (): User => {
     language: faker.helpers.arrayElement(languages),
   };
 };
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
-  const numberOfUsers = req.query.count
-    ? parseInt(req.query.count as string)
+export async function GET(req: NextRequest) {
+  const url = new URL(req.url);
+  const numberOfUsers = new URL(req.url)
+    ? parseInt(url.searchParams.get("count") as string)
     : 10;
   const users = Array.from({ length: numberOfUsers }, createFakeUser);
 
-  return Response.json({ users });
+  return NextResponse.json({ users });
 }

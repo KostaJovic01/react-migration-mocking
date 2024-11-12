@@ -8,7 +8,7 @@ import StatusBall from "@/app/components/atoms/StatusBall";
 import Link from "next/link";
 
 type Props = {
-  detail?: React.ReactNode;
+  detail: React.ReactNode;
 };
 
 const Layout = React.memo((props: Props) => {

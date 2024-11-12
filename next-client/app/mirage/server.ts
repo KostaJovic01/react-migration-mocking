@@ -2,9 +2,7 @@ import { createServer, Model, Registry } from "miragejs";
 import { ModelDefinition } from "miragejs/-types";
 import Schema from "miragejs/orm/schema";
 import { User } from "@/app/types";
-import { generateFakeEnquiries } from "@/app/api/inquiries/route";
-import { useAppDispatch } from "@/app/redux/hooks";
-import { setInquiryStore } from "@/app/redux/inquirySlice";
+import { generateFakeEnquiries } from "@/app/faker/fakeResponses";
 
 type AppRegistry = Registry<{ user: ModelDefinition<User> }, {}>;
 type AppSchema = Schema<AppRegistry>;
