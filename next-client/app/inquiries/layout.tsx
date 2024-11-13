@@ -22,8 +22,13 @@ import { InquirySchema, InquirySchemaData } from "@/app/zod/InquirySchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import FormField from "@/app/components/FormField";
 import Dropdown from "@/app/components/molecules/Dropdown";
-import SearchCategoryButton from "@/app/components/SearchCategoryButton";
-import SearchCategoryButtons from "@/app/components/SearchCategoryButtons";
+import SearchCategoryButton from "@/app/components/search header/SearchCategoryButton";
+import SearchCategorySelection from "@/app/components/search header/SearchCategorySelection";
+import { CloseButton } from "@headlessui/react";
+import DownloadButton from "@/app/components/search header/DownloadButton";
+import SearchInput from "@/app/components/search header/SearchInput";
+import SearchBar from "@/app/components/search header/SearchBar";
+import SearchHeader from "@/app/components/search header/SearchHeader";
 
 type Props = {
   detail: React.ReactNode;
@@ -171,35 +176,12 @@ const Layout = React.memo((props: Props) => {
         <div className="hidden bg-blue-300 bg-blue-500 bg-green-300 bg-green-500 bg-orange-300 bg-orange-500 bg-red-300 bg-red-500"></div>
         <MobileNav handleOpenSearch={() => handleOpenSearch()}>
           {isSearchOpen && (
-            <div className={"flex h-max w-full flex-col space-y-6"}>
-              <div className={"flex h-8 w-full flex-row items-center"}>
-                <MagnifyingGlassIcon aria-hidden="true" className="h-6 w-6" />
-                <input
-                  className={"h-8 flex-grow focus:border-none"}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button
-                  type="button"
-                  className="bg-gray-white flex h-8 w-8 items-center justify-center rounded-sm p-2.5"
-                >
-                  <ArrowDownTrayIcon
-                    aria-hidden="true"
-                    className="min-h-5 min-w-5"
-                  />
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsSearchOpen(false)}
-                  className="flex h-8 w-8 items-center justify-center rounded-sm bg-gray-300 p-2.5"
-                >
-                  <XMarkIcon aria-hidden="true" className="min-h-5 min-w-5" />
-                </button>
-              </div>
-              <SearchCategoryButtons
-                searchCategory={searchCategory}
-                setSearchCategory={setSearchCategory}
-              />
-            </div>
+            <SearchHeader
+              setSearchQuery={setSearchQuery}
+              setIsSearchOpen={setIsSearchOpen}
+              setSearchCategory={setSearchCategory}
+              searchCategory={searchCategory}
+            />
           )}
         </MobileNav>
 

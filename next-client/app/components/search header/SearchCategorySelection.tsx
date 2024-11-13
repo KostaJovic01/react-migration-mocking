@@ -1,12 +1,12 @@
 import React from "react";
-import SearchCategoryButton from "@/app/components/SearchCategoryButton";
+import SearchCategoryButton from "@/app/components/search header/SearchCategoryButton";
 
 type Props = {
   searchCategory: "name" | "channel" | "year" | undefined;
   setSearchCategory: (category: "name" | "channel" | "year") => void;
 };
 
-const SearchCategoryButtons: React.FC<Props> = ({
+const SearchCategorySelection: React.FC<Props> = ({
   searchCategory,
   setSearchCategory,
 }) => {
@@ -26,4 +26,4 @@ const SearchCategoryButtons: React.FC<Props> = ({
   );
 };
 
-export default SearchCategoryButtons;
+export default SearchCategorySelection;
