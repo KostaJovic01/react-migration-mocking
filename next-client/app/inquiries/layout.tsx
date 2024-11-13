@@ -22,6 +22,8 @@ import { InquirySchema, InquirySchemaData } from "@/app/zod/InquirySchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import FormField from "@/app/components/FormField";
 import Dropdown from "@/app/components/molecules/Dropdown";
+import SearchCategoryButton from "@/app/components/SearchCategoryButton";
+import SearchCategoryButtons from "@/app/components/SearchCategoryButtons";
 
 type Props = {
   detail: React.ReactNode;
@@ -54,17 +56,51 @@ const Layout = React.memo((props: Props) => {
     "name" | "channel" | "year"
   >();
   const [searchQuery, setSearchQuery] = useState("");
-  const getFilteredInquiries = () => {
+  const filterInquiriesByName = () => {
     let filteredInquiries: EnquiriesData = { enquiries: [] };
     filteredInquiries.enquiries =
       inquiries?.enquiries.filter((inquiry) =>
-        inquiry.title.toLowerCase().includes(searchQuery.toLowerCase()),
+        inquiry.person.fullname
+          .toLowerCase()
+          .includes(searchQuery.toLowerCase()),
       ) ?? [];
-
     return filteredInquiries;
   };
+  const filterInquiriesByChannel = () => {
+    let filteredInquiries: EnquiriesData = { enquiries: [] };
+    filteredInquiries.enquiries =
+      inquiries?.enquiries.filter(
+        (inquiry) =>
+          inquiry.channelName &&
+          inquiry.channelName.toLowerCase().includes(searchQuery.toLowerCase()),
+      ) ?? [];
+    return filteredInquiries;
+  };
+  const filterInquiriesByYear = () => {
+    let filteredInquiries: EnquiriesData = { enquiries: [] };
+    filteredInquiries.enquiries =
+      inquiries?.enquiries.filter(
+        (inquiry) =>
+          inquiry.createdAt &&
+          inquiry.createdAt.toLowerCase().includes(searchQuery.toLowerCase()),
+      ) ?? [];
+    return filteredInquiries;
+  };
+
+  const getFilteredInquiries = () => {
+    switch (searchCategory) {
+      case "name":
+        return filterInquiriesByName();
+      case "channel":
+        return filterInquiriesByChannel();
+      case "year":
+        return filterInquiriesByYear();
+      default:
+        return filterInquiriesByName();
+    }
+  };
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [tempEnquiery, setTempEnquiery] = useState<Enquiry>({
+  const [tempEnquiry, setTempEnquiry] = useState<Enquiry>({
     channelName: "",
     createdAt: "",
     id: "",
@@ -102,13 +138,14 @@ const Layout = React.memo((props: Props) => {
   const onSubmit = async (data: InquirySchemaData) => {
     console.log("submitting", data);
     const enquiry: Enquiry = {
-      ...tempEnquiery,
+      ...tempEnquiry,
       title: data.title,
       person: {
-        ...tempEnquiery.person,
+        ...tempEnquiry.person,
         givenName: data.person.givenName,
         familyName: data.person.familyName,
         email: data.person.email,
+        fullname: `${data.person.givenName} ${data.person.familyName}`,
       },
     };
     handleCreateInquiry(enquiry);
@@ -158,29 +195,10 @@ const Layout = React.memo((props: Props) => {
                   <XMarkIcon aria-hidden="true" className="min-h-5 min-w-5" />
                 </button>
               </div>
-              <div className={"flex flex-row items-center space-x-2"}>
-                <button
-                  type="button"
-                  onClick={() => setSearchCategory("name")}
-                  className="flex h-8 w-max items-center justify-center rounded-sm bg-gray-300 px-3"
-                >
-                  Name
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setSearchCategory("channel")}
-                  className="flex h-8 w-max items-center justify-center rounded-sm bg-gray-300 px-3"
-                >
-                  Channel
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setSearchCategory("year")}
-                  className="flex h-8 w-max items-center justify-center rounded-sm bg-gray-300 px-3"
-                >
-                  Year
-                </button>
-              </div>
+              <SearchCategoryButtons
+                searchCategory={searchCategory}
+                setSearchCategory={setSearchCategory}
+              />
             </div>
           )}
         </MobileNav>
