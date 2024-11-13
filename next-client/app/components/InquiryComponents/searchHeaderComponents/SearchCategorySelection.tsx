@@ -1,15 +1,9 @@
 import React from "react";
-import SearchCategoryButton from "@/app/components/search header/SearchCategoryButton";
+import SearchCategoryButton from "@/app/components/InquiryComponents/searchHeaderComponents/SearchCategoryButton";
+import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
 
-type Props = {
-  searchCategory: "name" | "channel" | "year" | undefined;
-  setSearchCategory: (category: "name" | "channel" | "year") => void;
-};
-
-const SearchCategorySelection: React.FC<Props> = ({
-  searchCategory,
-  setSearchCategory,
-}) => {
+const SearchCategorySelection = () => {
+  const { searchCategory, setSearchCategory } = useInquiriesContext();
   return (
     <div className={"flex flex-row items-center space-x-2"}>
       {["name", "channel", "year"].map((category) => (
@@ -25,5 +19,4 @@ const SearchCategorySelection: React.FC<Props> = ({
     </div>
   );
 };
-
 export default SearchCategorySelection;
