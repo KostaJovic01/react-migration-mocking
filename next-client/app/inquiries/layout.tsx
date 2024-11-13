@@ -16,6 +16,8 @@ import {
 import CardList from "@/app/components/molecules/CardList";
 import RoundButton from "@/app/components/RoundButton";
 import Modal from "@/app/components/molecules/Modal";
+import { undefined, z } from "zod";
+import FormInput from "@/app/components/molecules/FormInput";
 
 type Props = {
   detail: React.ReactNode;
@@ -58,7 +60,39 @@ const Layout = React.memo((props: Props) => {
     return filteredInquiries;
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [tempEnquiery, setTempEnquiery] = useState<Enquiry>({
+    channelName: "",
+    createdAt: "",
+    id: "",
+    language: "",
+    person: {
+      givenName: "",
+      familyName: "",
+      language: "",
+      email: "",
+      newsletter: false,
+      fullname: "",
+    },
 
+    status: {
+      text: "pending",
+    },
+    title: "",
+  });
+  const handleCreateInquiry = (enquiery: Enquiry) => {
+    if (!inquiries) return;
+    enquiery.id = Math.random().toString(36);
+    setInquiries({
+      ...inquiries,
+      enquiries: [...inquiries.enquiries, enquiery],
+    });
+    dispatch(
+      setInquiryStore({
+        ...inquiries,
+        enquiries: [...inquiries.enquiries, enquiery],
+      }),
+    );
+  };
   return (
     <div className={"relative flex h-screen flex-grow flex-row"}>
       <div
@@ -131,7 +165,74 @@ const Layout = React.memo((props: Props) => {
         <RoundButton onClick={() => setIsModalOpen(true)}>
           <PlusIcon width={"24"} height={"24"} />
         </RoundButton>
-        <Modal open={isModalOpen} setOpen={setIsModalOpen}></Modal>
+        <Modal open={isModalOpen} setOpen={setIsModalOpen}>
+          <h2 className={"text-2xl"}>Create Inquiry</h2>
+          <form>
+            <FormInput
+              label={"Title"}
+              value={tempEnquiery.title}
+              setValue={(title) =>
+                setTempEnquiery({ ...tempEnquiery, title: title })
+              }
+            />
+            <FormInput
+              label={"First Name"}
+              value={tempEnquiery.person.givenName}
+              setValue={(firstName) =>
+                setTempEnquiery({
+                  ...tempEnquiery,
+                  person: { ...tempEnquiery.person, givenName: firstName },
+                })
+              }
+            />
+            <FormInput
+              label={"Last Name"}
+              value={tempEnquiery.person.familyName}
+              setValue={(lastName) =>
+                setTempEnquiery({
+                  ...tempEnquiery,
+                  person: { ...tempEnquiery.person, familyName: lastName },
+                })
+              }
+            />
+            <FormInput
+              label={"Email"}
+              value={tempEnquiery.person.email}
+              setValue={(email) =>
+                setTempEnquiery({
+                  ...tempEnquiery,
+                  person: { ...tempEnquiery.person, email: email },
+                })
+              }
+            />
+            <FormInput
+              label={"Phone"}
+              value={
+                tempEnquiery.person.telephone
+                  ? tempEnquiery.person.telephone
+                  : ""
+              }
+              setValue={(phone) =>
+                setTempEnquiery({
+                  ...tempEnquiery,
+                  person: { ...tempEnquiery.person, telephone: phone },
+                })
+              }
+            />
+            <div className="mt-5 flex flex-row justify-end">
+              <button
+                type="button"
+                onClick={() => {
+                  handleCreateInquiry(tempEnquiery);
+                  setIsModalOpen(false);
+                }}
+                className="w-mas inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </Modal>
       </div>
       {props.detail}
     </div>

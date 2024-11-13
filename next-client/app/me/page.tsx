@@ -111,7 +111,7 @@ const Page = (props: Props) => {
             label={"Email Address"}
             value={tempUser.email}
             setValue={() => {}}
-          />{" "}
+          />
           <FormInput
             label={"First Name"}
             value={tempUser.firstName}

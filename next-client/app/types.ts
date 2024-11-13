@@ -51,8 +51,8 @@ export type Establishment = {
 // type for enquiry status
 export type Status = {
   text: "approved" | "pending" | "error";
-  emailReceivers: EmailReceiver[];
-  autoresponder: Autoresponder;
+  emailReceivers?: EmailReceiver[];
+  autoresponder?: Autoresponder;
   alpinebitsEstablishments?: Establishment[]; // Optional
   casablancaEstablishments?: Establishment[]; // Optional
   reGuestEstablishments?: Establishment[]; // Optional
