@@ -16,8 +16,12 @@ import {
 import CardList from "@/app/components/molecules/CardList";
 import RoundButton from "@/app/components/RoundButton";
 import Modal from "@/app/components/molecules/Modal";
-import { undefined, z } from "zod";
+import { FieldErrors, useForm } from "react-hook-form";
 import FormInput from "@/app/components/molecules/FormInput";
+import { InquirySchema, InquirySchemaData } from "@/app/zod/InquirySchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import FormField from "@/app/components/FormField";
+import Dropdown from "@/app/components/molecules/Dropdown";
 
 type Props = {
   detail: React.ReactNode;
@@ -82,6 +86,7 @@ const Layout = React.memo((props: Props) => {
   const handleCreateInquiry = (enquiery: Enquiry) => {
     if (!inquiries) return;
     enquiery.id = Math.random().toString(36);
+    enquiery.createdAt = new Date().toISOString();
     setInquiries({
       ...inquiries,
       enquiries: [...inquiries.enquiries, enquiery],
@@ -93,6 +98,32 @@ const Layout = React.memo((props: Props) => {
       }),
     );
   };
+
+  const onSubmit = async (data: InquirySchemaData) => {
+    console.log("submitting", data);
+    const enquiry: Enquiry = {
+      ...tempEnquiery,
+      title: data.title,
+      person: {
+        ...tempEnquiery.person,
+        givenName: data.person.givenName,
+        familyName: data.person.familyName,
+        email: data.person.email,
+      },
+    };
+    handleCreateInquiry(enquiry);
+    setIsModalOpen(false);
+  };
+  const onInvalid = (data: FieldErrors) => {
+    console.log("invalid", data);
+  };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<InquirySchemaData>({
+    resolver: zodResolver(InquirySchema),
+  });
   return (
     <div className={"relative flex h-screen flex-grow flex-row"}>
       <div
@@ -167,65 +198,44 @@ const Layout = React.memo((props: Props) => {
         </RoundButton>
         <Modal open={isModalOpen} setOpen={setIsModalOpen}>
           <h2 className={"text-2xl"}>Create Inquiry</h2>
-          <form>
-            <FormInput
-              label={"Title"}
-              value={tempEnquiery.title}
-              setValue={(title) =>
-                setTempEnquiery({ ...tempEnquiery, title: title })
-              }
+          <form
+            onSubmit={handleSubmit(
+              (data) => onSubmit(data),
+              (errors) => onInvalid(errors),
+            )}
+          >
+            <FormField
+              type={"text"}
+              placeholder={"Title"}
+              register={register}
+              name={"title"}
+              error={errors.title}
             />
-            <FormInput
-              label={"First Name"}
-              value={tempEnquiery.person.givenName}
-              setValue={(firstName) =>
-                setTempEnquiery({
-                  ...tempEnquiery,
-                  person: { ...tempEnquiery.person, givenName: firstName },
-                })
-              }
+            <FormField
+              type={"text"}
+              placeholder={"first name"}
+              register={register}
+              name={"person.givenName"}
+              error={errors.person?.givenName}
             />
-            <FormInput
-              label={"Last Name"}
-              value={tempEnquiery.person.familyName}
-              setValue={(lastName) =>
-                setTempEnquiery({
-                  ...tempEnquiery,
-                  person: { ...tempEnquiery.person, familyName: lastName },
-                })
-              }
+            <FormField
+              type={"text"}
+              placeholder={"last name"}
+              register={register}
+              name={"person.familyName"}
+              error={errors.person?.familyName}
             />
-            <FormInput
-              label={"Email"}
-              value={tempEnquiery.person.email}
-              setValue={(email) =>
-                setTempEnquiery({
-                  ...tempEnquiery,
-                  person: { ...tempEnquiery.person, email: email },
-                })
-              }
+            <FormField
+              type={"email"}
+              placeholder={"email"}
+              register={register}
+              name={"person.email"}
+              error={errors.person?.email}
             />
-            <FormInput
-              label={"Phone"}
-              value={
-                tempEnquiery.person.telephone
-                  ? tempEnquiery.person.telephone
-                  : ""
-              }
-              setValue={(phone) =>
-                setTempEnquiery({
-                  ...tempEnquiery,
-                  person: { ...tempEnquiery.person, telephone: phone },
-                })
-              }
-            />
+
             <div className="mt-5 flex flex-row justify-end">
               <button
-                type="button"
-                onClick={() => {
-                  handleCreateInquiry(tempEnquiery);
-                  setIsModalOpen(false);
-                }}
+                type="submit"
                 className="w-mas inline-flex justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Save

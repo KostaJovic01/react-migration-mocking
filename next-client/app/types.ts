@@ -1,4 +1,6 @@
 import { StaticImageData } from "next/image";
+import { FieldError, UseFormRegister } from "react-hook-form";
+import { InquirySchemaData } from "@/app/zod/InquirySchema";
 
 export type User = {
   id: string;
@@ -14,10 +16,10 @@ export type Person = {
   givenName: string;
   familyName: string;
   gender?: string; // Optional
-  language: string;
+  language?: string;
   email: string;
   telephone?: string; // Optional
-  newsletter: boolean;
+  newsletter?: boolean;
   fullname: string;
 };
 
@@ -81,12 +83,12 @@ export type RoomStay = {
 export type Enquiry = {
   id: string;
   title: string;
-  language: string;
+  language?: string;
   text?: string; // Optional
   person: Person;
   tracking?: Tracking; // Optional
   status: Status;
-  createdAt: string; // ISO date format with timezone info.
+  createdAt?: string; // ISO date format with timezone info.
   roomStays?: RoomStay[]; // Room stays could be optional.
   channelName?: string; // Channel name is optional.
 };
@@ -95,3 +97,19 @@ export type Enquiry = {
 export type EnquiriesData = {
   enquiries: Enquiry[];
 };
+
+export type FormFieldProps = {
+  type: string;
+  placeholder: string;
+  name: ValidFieldNames;
+  register: UseFormRegister<InquirySchemaData>;
+  error: FieldError | undefined;
+  valueAsNumber?: boolean;
+};
+
+export type ValidFieldNames =
+  | "title"
+  | "person"
+  | "person.givenName"
+  | "person.email"
+  | "person.familyName";

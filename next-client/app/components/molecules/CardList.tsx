@@ -36,7 +36,8 @@ const CardList = (props: Props) => {
               {item.person.fullname} - {item.person.email}
             </div>
             <div className={"flex flex-row truncate text-gray-400"}>
-              {new Date(item.createdAt).toLocaleString()} - {item.channelName}
+              {new Date(item.createdAt ?? "").toLocaleString()} -{" "}
+              {item.channelName}
             </div>
           </div>
         </Link>

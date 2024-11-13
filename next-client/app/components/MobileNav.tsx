@@ -81,7 +81,7 @@ const MobileNav = (props: Props) => {
   };
 
   return (
-    <div className="absolute left-0 top-0 z-10 flex w-full flex-row items-center justify-between px-4 py-4 text-black sm:px-6">
+    <div className="absolute left-0 top-0 z-10 flex w-full flex-row items-center justify-between text-black sm:px-6">
       {props.children ? (
         <div
           className={`flex w-full flex-row justify-between px-6 py-4 lg:justify-end ${props.children && "border-b-2 border-solid border-gray-300"}`}

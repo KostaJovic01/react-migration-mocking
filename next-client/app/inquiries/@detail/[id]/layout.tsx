@@ -87,7 +87,7 @@ const Page = (props: Props) => {
       <div className="pb-2 pt-4 text-3xl">{inquiry?.person.fullname}</div>
       <div className="text-sm">
         {inquiry?.person.email} -{" "}
-        {inquiry && new Date(inquiry.createdAt).toLocaleString()}
+        {inquiry && new Date(inquiry.createdAt ?? "").toLocaleString()}
       </div>
       <TabGroup>
         <TabList className="flex w-full flex-row space-x-2 py-8">
