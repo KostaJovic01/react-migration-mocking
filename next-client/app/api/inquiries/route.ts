@@ -5,8 +5,7 @@ export async function GET(req: NextRequest) {
   const url = new URL(req.url);
   const numberOfEnquiries = url.searchParams.get("count")
     ? parseInt(url.searchParams.get("count") as string)
-    : 10;
-  const enquiries = generateFakeEnquiries(numberOfEnquiries);
-
+    : 100;
+  const enquiries = generateFakeEnquiries(100);
   return NextResponse.json({ enquiries });
 }

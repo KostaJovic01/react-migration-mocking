@@ -41,7 +41,9 @@ export function makeServer({ environment = "development" } = {}) {
         };
       });
       this.get("/inquiries", (schema: AppSchema) => {
-        const enquiries = generateFakeEnquiries(6);
+        const enquiries = generateFakeEnquiries(100);
+        console.log("Generated fake enquiries:", enquiries);
+
         return {
           enquiries,
         };

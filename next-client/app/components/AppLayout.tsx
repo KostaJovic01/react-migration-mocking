@@ -82,32 +82,7 @@ export default function AppLayout(props: Props) {
 
   return (
     <>
-      <div className={"flex flex-row"}>
-        {/* Mobile Sidebar */}
-        <Dialog
-          open={sidebarOpen}
-          onClose={setSidebarOpen}
-          className="relative z-50 lg:hidden"
-        >
-          <DialogBackdrop
-            transition
-            className="fixed inset-0 bg-gray-900/80 transition-opacity duration-300 ease-linear data-[closed]:opacity-0"
-          />
-          <div className="fixed inset-0 flex">
-            <DialogPanel
-              transition
-              className="relative flex w-full max-w-[272px] flex-1 transform transition duration-300 ease-in-out data-[closed]:-translate-x-full"
-            >
-              <Sidebar
-                user={user}
-                navigation={navigation}
-                teams={teams}
-                handleNavigationClick={handleNavigationClick}
-              />
-            </DialogPanel>
-          </div>
-        </Dialog>
-
+      <div className={"flex w-screen flex-row"}>
         {/* Static sidebar for desktop */}
         <div className="hidden lg:inset-y-0 lg:flex lg:w-72 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
@@ -118,26 +93,7 @@ export default function AppLayout(props: Props) {
             handleNavigationClick={handleNavigationClick}
           />
         </div>
-
-        {/* Static Header for Mobile */}
-        <div className="fixed top-0 z-10 flex w-screen flex-row items-center justify-between px-4 py-4 text-black sm:px-6 lg:hidden">
-          <button
-            type="button"
-            onClick={() => setSidebarOpen(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-sm bg-gray-300 p-2.5 lg:hidden"
-          >
-            <Bars3Icon aria-hidden="true" className="min-h-5 min-w-5" />
-          </button>
-          <button
-            type="button"
-            onClick={() => setSidebarOpen(true)}
-            className="flex h-8 w-8 items-center justify-center rounded-sm bg-gray-300 p-2.5 lg:hidden"
-          >
-            <EllipsisVerticalIcon className="min-h-5 min-w-5" />
-          </button>
-        </div>
-
-        <main className={"flex grow"}>{props.children}</main>
+        <main className={"flex flex-grow"}>{props.children}</main>
       </div>
     </>
   );

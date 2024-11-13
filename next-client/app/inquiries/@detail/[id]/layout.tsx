@@ -7,7 +7,8 @@ import StatusLabel from "@/app/components/molecules/StatusLabel";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import Modal from "@/app/components/molecules/Modal";
 import { setInquiryStore } from "@/app/redux/inquirySlice";
-import { useRouter } from "next/router";
+import Link from "next/link";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 type Props = {
   children?: React.ReactNode;
@@ -63,13 +64,27 @@ const Page = (props: Props) => {
       </Modal>
       <div
         id="inquire-header"
-        className="fixed top-0 flex flex-row justify-between"
+        className="absolute left-0 top-0 flex w-full flex-row justify-between px-6 py-4"
       >
-        <a href={"/inquiries"}>X</a>
-        <button onClick={() => setIsModalOpen(true)}>Delete</button>
+        <Link
+          href={"/inquiries"}
+          className={
+            "flex h-8 w-8 items-center justify-center rounded-sm bg-gray-300 p-2.5"
+          }
+        >
+          <XMarkIcon />
+        </Link>
+        <button
+          className={
+            "flex h-8 w-max items-center justify-center rounded-sm bg-gray-300 p-2.5"
+          }
+          onClick={() => setIsModalOpen(true)}
+        >
+          <div>Delete</div>
+        </button>
       </div>
       <StatusLabel status={inquiry?.status.text} />
-      <div className="pb-2 pt-4 text-xl">{inquiry?.person.fullname}</div>
+      <div className="pb-2 pt-4 text-3xl">{inquiry?.person.fullname}</div>
       <div className="text-sm">
         {inquiry?.person.email} -{" "}
         {inquiry && new Date(inquiry.createdAt).toLocaleString()}

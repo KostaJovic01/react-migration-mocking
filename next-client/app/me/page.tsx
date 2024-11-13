@@ -12,6 +12,8 @@ import Dropdown from "@/app/components/molecules/Dropdown";
 import { setUserStore } from "@/app/redux/userSlice";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
 import { User } from "@/app/types";
+import RoundButton from "@/app/components/RoundButton";
+import MobileNav from "@/app/components/MobileNav";
 
 type Props = {};
 const Page = (props: Props) => {
@@ -53,7 +55,8 @@ const Page = (props: Props) => {
   }, [user]);
 
   return (
-    <div className={"relative flex h-screen flex-col"}>
+    <div className={"relative flex h-screen w-full flex-col"}>
+      <MobileNav />
       <div
         id={"header"}
         className={
@@ -95,15 +98,9 @@ const Page = (props: Props) => {
           <UsersIcon className={"h-6 w-6"} />{" "}
         </UserDataLabel>
       </div>
-      <button
-        onClick={() => setIsModalOpen(true)}
-        id={"eddit button"}
-        className={
-          "absolute bottom-6 right-6 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white"
-        }
-      >
+      <RoundButton onClick={() => setIsModalOpen(true)}>
         <EditIcon width={"24"} height={"24"} />
-      </button>
+      </RoundButton>
       <Modal open={isModalOpen} setOpen={setIsModalOpen}>
         <div className={"flex flex-col space-y-5"}>
           <span

@@ -105,6 +105,6 @@ const createFakeEnquiry = (): Enquiry => {
 };
 
 // Generate an array of fake enquiries
-export const generateFakeEnquiries = (count = 10): Enquiry[] => {
+export const generateFakeEnquiries = (count = 100): Enquiry[] => {
   return Array.from({ length: count }, () => createFakeEnquiry());
 };

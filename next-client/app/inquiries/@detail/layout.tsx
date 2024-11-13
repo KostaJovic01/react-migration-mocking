@@ -9,7 +9,7 @@ const Layout = (props: Props) => {
 
   return (
     <div
-      className={`${id ? "w-full" : "w-0"} absolute left-0 top-0 z-50 h-screen bg-white md:static`}
+      className={`${id ? "w-full" : "w-0"} absolute left-0 top-0 z-50 h-screen bg-white md:static md:z-0`}
     >
       {props.children}
     </div>

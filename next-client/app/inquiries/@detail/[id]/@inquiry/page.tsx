@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useAppSelector } from "@/app/redux/hooks";
 import { useParams } from "next/navigation";
 import { Enquiry } from "@/app/types";
+import RoomStays from "@/app/inquiries/@detail/[id]/@inquiry/RoomStays";
 
 export default function Page() {
   const { id } = useParams();
@@ -12,6 +13,11 @@ export default function Page() {
   );
 
   return (
-    <div>{inquiry?.person && <Person person={inquiry?.person}></Person>}</div>
+    <div>
+      {inquiry?.person && <Person person={inquiry?.person}></Person>}
+      {inquiry?.roomStays && (
+        <RoomStays roomStays={inquiry?.roomStays}></RoomStays>
+      )}
+    </div>
   );
 }
