@@ -1,6 +1,6 @@
 import React from "react";
 import SearchCategoryButton from "@/app/components/InquiryComponents/searchHeaderComponents/SearchCategoryButton";
-import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 const SearchCategorySelection = () => {
   const { searchCategory, setSearchCategory } = useInquiriesContext();

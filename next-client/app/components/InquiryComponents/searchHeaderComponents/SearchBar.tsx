@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import SearchInput from "@/app/components/InquiryComponents/searchHeaderComponents/SearchInput";
 import DownloadButton from "@/app/components/InquiryComponents/searchHeaderComponents/DownloadButton";
 import CloseButton from "@/app/components/InquiryComponents/searchHeaderComponents/CloseButton";
-import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 const SearchBar = () => {
   const { setSearchQuery, handleOpenSearch } = useInquiriesContext();

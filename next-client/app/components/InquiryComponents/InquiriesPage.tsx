@@ -5,7 +5,7 @@ import NewInquirieButton from "@/app/components/InquiryComponents/NewInquirieBut
 import Modal from "@/app/components/molecules/Modal";
 import NewInquirieForm from "@/app/components/InquiryComponents/NewInquirieForm";
 import React from "react";
-import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 type Props = {};
 const InquiriesPage = (props: Props) => {

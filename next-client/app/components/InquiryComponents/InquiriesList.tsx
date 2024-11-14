@@ -1,6 +1,6 @@
 import CardList from "@/app/components/molecules/CardList";
 import React from "react";
-import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 const InquiriesList = () => {
   const { inquiries, getFilteredInquiries } = useInquiriesContext();

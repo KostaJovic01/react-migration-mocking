@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { InquiriesProvider } from "@/app/inquiries/InquiriesContext";
+import { InquiriesProvider } from "@/app/(pages)/inquiries/InquiriesContext";
 import InquiriesPage from "@/app/components/InquiryComponents/InquiriesPage";
 
 type Props = {

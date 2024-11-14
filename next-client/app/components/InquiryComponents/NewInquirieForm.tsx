@@ -1,6 +1,6 @@
 import FormField from "@/app/components/FormField";
 import React from "react";
-import { useInquiriesContext } from "@/app/inquiries/InquiriesContext";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 import { useForm } from "react-hook-form";
 import { InquirySchema, InquirySchemaData } from "@/app/zod/InquirySchema";
 import { zodResolver } from "@hookform/resolvers/zod";
