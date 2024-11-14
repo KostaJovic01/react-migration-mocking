@@ -5,6 +5,11 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AppLayout from "@/app/components/AppLayout";
 import { makeServer } from "@/app/mirage/server";
+import { appWithTranslation } from "next-i18next";
+import React from "react";
+import I18nProvider from "@/app/i18nProvider";
+import { router } from "next/client";
+import i18n from "@/public/locales/i18n";
 
 if (process.env.NODE_ENV === "development") {
   makeServer({ environment: "development" });
@@ -28,7 +33,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Provider store={store}>
-          <AppLayout>{children}</AppLayout>
+          <I18nProvider
+            Component={() => <AppLayout>{children}</AppLayout>}
+            pageProps={{}}
+            router={router}
+          />
         </Provider>
       </body>
     </html>

@@ -15,7 +15,7 @@ import CallBellIcon from "@/app/assets/CallBellIcon";
 import ElipsisSquareIcon from "@/app/assets/ElipsisSquareIcon";
 import CompasIcon from "@/app/assets/CompasIcon";
 import KostaJImage from "@/app/assets/KostaJ.jpg";
-import Sidebar from "@/app/components/organisms/Sidebar";
+import Sidebar from "@/app/components/Nav/Sidebar/Sidebar";
 
 type Props = {
   children?: React.ReactNode;

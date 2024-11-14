@@ -5,8 +5,6 @@ import { User } from "@/app/types";
 import { faker } from "@faker-js/faker";
 import { NextRequest, NextResponse } from "next/server";
 
-const languages = ["English", "German", "Spanish", "French", "Italian"];
-
 // Function to generate a single fake user
 const createFakeUser = (): User => {
   return {
@@ -14,7 +12,7 @@ const createFakeUser = (): User => {
     firstName: faker.person.firstName(),
     lastName: faker.person.lastName(),
     email: faker.internet.email(),
-    language: faker.helpers.arrayElement(languages),
+    language: faker.helpers.arrayElement(["English", "German"]),
   };
 };
 export async function GET(req: NextRequest) {

@@ -1,9 +1,8 @@
 import { EnquiriesData, Enquiry } from "@/app/types";
-import StatusBall from "@/app/components/atoms/StatusBall";
+import StatusBall from "@/app/components/StatusBall";
 import Link from "next/link";
 import React from "react";
-
-const items = [{ id: 1 }];
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 type Props = {
   data: EnquiriesData;

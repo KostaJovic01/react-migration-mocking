@@ -4,26 +4,28 @@ import React, { useEffect, useState } from "react";
 
 import KostaJImage from "@/app/assets/KostaJ.jpg";
 import { UsersIcon } from "@heroicons/react/24/outline";
-import UserDataLabel from "@/app/components/molecules/UserDataLabel";
+import UserDataLabel from "@/app/(pages)/me/UserDataLabel";
 import EditIcon from "@/app/assets/EditIcon";
-import Modal from "@/app/components/molecules/Modal";
-import FormInput from "@/app/components/molecules/FormInput";
-import Dropdown from "@/app/components/molecules/Dropdown";
+import Modal from "@/app/components/Modal";
+import FormInput from "@/app/(pages)/me/FormInput";
+import Dropdown from "@/app/(pages)/me/Dropdown";
 import { setUserStore } from "@/app/redux/userSlice";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
 import { User } from "@/app/types";
 import RoundButton from "@/app/components/RoundButton";
-import MobileNav from "@/app/components/MobileNav";
+import MobileNav from "@/app/components/Nav/MobileNav";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 const Page = (props: Props) => {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState<User>({
     id: "0",
-    firstName: "",
-    lastName: "",
-    email: "",
-    language: "",
+    firstName: "Kosta",
+    lastName: "Jovic",
+    email: "kosta.jovic@additive.eu",
+    language: "German",
   });
   const [tempUser, setTempUser] = useState(user);
 
@@ -31,11 +33,6 @@ const Page = (props: Props) => {
   const updateUserStore = (inputUser: User) => {
     dispatch(setUserStore(inputUser));
   };
-  const userStore = useAppSelector((state) => state.userState);
-
-  useEffect(() => {
-    fetchUser();
-  }, []);
 
   const fetchUser = async () => {
     try {
@@ -50,8 +47,22 @@ const Page = (props: Props) => {
   };
 
   useEffect(() => {
-    console.table(user);
+    //on render check if the user is present in local storage and set it to the user state
+    const userString = localStorage.getItem("user");
+    if (!userString) {
+      //if the user doesn't exist in local storage then fetch it and return
+      fetchUser();
+      return;
+    }
+    setUser(JSON.parse(userString));
+    setTempUser(JSON.parse(userString));
+  }, []);
+
+  useEffect(() => {
+    //update the user Store when the user changes
+    //pushing data to the backend could be also done here
     updateUserStore(user);
+    localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
 
   return (

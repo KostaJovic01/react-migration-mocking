@@ -1,8 +1,8 @@
-import SidebarHeader from "@/app/components/molecules/SidebarHeader";
-import UserNavItem from "@/app/components/molecules/UserNavItem";
+import SidebarHeader from "@/app/components/Nav/Sidebar/SidebarHeader";
+import UserNavItem from "@/app/components/Nav/Sidebar/UserNavItem";
 import React from "react";
-import NavItem from "@/app/components/molecules/NavItem";
-import SidebarFooterItem from "@/app/components/molecules/SidebarFooterItem";
+import NavItem from "@/app/components/Nav/Sidebar/NavItem";
+import SidebarFooterItem from "@/app/components/Nav/Sidebar/SidebarFooterItem";
 
 type Props = {
   navigation: any[];

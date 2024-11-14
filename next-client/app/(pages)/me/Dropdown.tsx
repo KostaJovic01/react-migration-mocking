@@ -2,11 +2,13 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import React from "react";
 
+type language = "English" | "German";
+
 type Props = {
   label: string;
   optionSelected: string;
-  options: string[];
-  setOption: (option: string) => void;
+  options: language[];
+  setOption: (option: "English" | "German") => void;
 };
 const Dropdown = (props: Props) => {
   return (
@@ -33,7 +35,9 @@ const Dropdown = (props: Props) => {
             <MenuItem key={option}>
               <button
                 className={"flex grow rounded-md p-2 hover:bg-gray-100"}
-                onClick={() => props.setOption(option)}
+                onClick={() => {
+                  props.setOption(option);
+                }}
               >
                 {option}
               </button>

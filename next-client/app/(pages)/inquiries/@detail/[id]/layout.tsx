@@ -3,12 +3,13 @@ import { useParams } from "next/navigation";
 import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
 import React, { useEffect, useState } from "react";
 import { Enquiry } from "@/app/types";
-import StatusLabel from "@/app/components/molecules/StatusLabel";
+import StatusLabel from "@/app/components/StatusLabel";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import Modal from "@/app/components/molecules/Modal";
+import Modal from "@/app/components/Modal";
 import { setInquiryStore } from "@/app/redux/inquirySlice";
 import Link from "next/link";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
 
 type Props = {
   children?: React.ReactNode;
@@ -21,21 +22,7 @@ const Page = (props: Props) => {
   const inquiriesState = useAppSelector((state) => state.inquiryState);
   const [inquiry, setInquiry] = useState<Enquiry | undefined>();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const dispatch = useAppDispatch();
-
-  const updateInquiryStore = (updatedInquiries: Enquiry[]) => {
-    dispatch(
-      setInquiryStore({ ...inquiriesState, enquiries: updatedInquiries }),
-    );
-  };
-
-  const deleteInquiry = () => {
-    if (!inquiry) return;
-    const updatedInquiries = inquiriesState.enquiries.filter(
-      (item) => item.id !== inquiry.id,
-    );
-    updateInquiryStore(updatedInquiries);
-  };
+  const { handleDeleteInquiry } = useInquiriesContext();
 
   useEffect(() => {
     setInquiry(inquiriesState.enquiries.find((inq) => inq.id === id));
@@ -51,15 +38,16 @@ const Page = (props: Props) => {
           Are you sure you want to delete this element?
         </div>
         <div className="flex w-full flex-row justify-end">
-          <button
+          <Link
+            href={"/inquiries"}
             className="rounded-sm bg-red-200 p-2 text-sm text-red-500"
             onClick={() => {
-              deleteInquiry();
+              handleDeleteInquiry(inquiry);
               setIsModalOpen(false);
             }}
           >
             Delete
-          </button>
+          </Link>
         </div>
       </Modal>
       <div

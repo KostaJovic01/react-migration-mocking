@@ -1,16 +1,23 @@
-import MobileNav from "@/app/components/MobileNav";
+import MobileNav from "@/app/components/Nav/MobileNav";
 import SearchHeader from "@/app/components/InquiryComponents/searchHeaderComponents/SearchHeader";
 import InquiriesList from "@/app/components/InquiryComponents/InquiriesList";
 import NewInquirieButton from "@/app/components/InquiryComponents/NewInquirieButton";
-import Modal from "@/app/components/molecules/Modal";
+import Modal from "@/app/components/Modal";
 import NewInquirieForm from "@/app/components/InquiryComponents/NewInquirieForm";
 import React from "react";
 import { useInquiriesContext } from "@/app/(pages)/inquiries/InquiriesContext";
+import Toast from "@/app/components/Toast";
 
 type Props = {};
 const InquiriesPage = (props: Props) => {
-  const { isSearchOpen, handleOpenSearch, isModalOpen, setIsModalOpen } =
-    useInquiriesContext();
+  const {
+    isSearchOpen,
+    handleOpenSearch,
+    isModalOpen,
+    setIsModalOpen,
+    showToast,
+    handleToastVisibility,
+  } = useInquiriesContext();
   return (
     <div
       className={
@@ -27,6 +34,11 @@ const InquiriesPage = (props: Props) => {
       <Modal open={isModalOpen} setOpen={setIsModalOpen}>
         <NewInquirieForm />
       </Modal>
+      <Toast
+        message={"Inquiry successfully saved"}
+        show={showToast}
+        setShow={handleToastVisibility}
+      />
     </div>
   );
 };

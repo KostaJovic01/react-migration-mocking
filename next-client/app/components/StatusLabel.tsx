@@ -1,4 +1,4 @@
-import StatusBall from "@/app/components/atoms/StatusBall";
+import StatusBall from "@/app/components/StatusBall";
 
 type Props = {
   status: "approved" | "pending" | "error" | undefined;

@@ -7,7 +7,7 @@ export type User = {
   firstName: string;
   lastName: string;
   email: string;
-  language: string;
+  language: "English" | "German";
   image?: StaticImageData;
 };
 

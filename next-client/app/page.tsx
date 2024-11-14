@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Sidebar from "@/app/components/AppLayout";
-import Hamburger from "@/app/components/Hamburger";
-import MobileNav from "@/app/components/MobileNav";
+
+import MobileNav from "@/app/components/Nav/MobileNav";
 
 export default function Home() {
   return (

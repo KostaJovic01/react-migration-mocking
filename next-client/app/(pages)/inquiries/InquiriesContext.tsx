@@ -27,15 +27,23 @@ export const InquiriesProvider = (props: Props) => {
   >();
   const [searchQuery, setSearchQuery] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [isInquiriesLoading, setIsInquiriesLoading] = useState(true);
+  const closeToast = () => {
+    setShowToast(false);
+  };
 
   // Fetch inquiries
   const fetchInquiries = useCallback(async () => {
     try {
       const response = await fetch("/api/inquiries", { cache: "force-cache" });
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       const data = await response.json();
+      setIsInquiriesLoading(false);
       setInquiries(data);
       dispatch(setInquiryStore(data));
     } catch (error) {
+      setIsInquiriesLoading(false);
       console.error("Error fetching inquiries:", error);
     }
   }, [dispatch]);
@@ -115,6 +123,15 @@ export const InquiriesProvider = (props: Props) => {
       }),
     );
     setIsModalOpen(false);
+    setShowToast(true);
+  };
+  const handleDeleteInquiry = (inquiry: Enquiry) => {
+    if (!inquiry || !inquiries) return;
+    const updatedInquiries = inquiries.enquiries.filter(
+      (item) => item.id !== inquiry.id,
+    );
+    dispatch(setInquiryStore({ ...inquiries, enquiries: updatedInquiries }));
+    setInquiries({ ...inquiries, enquiries: updatedInquiries });
   };
 
   // Toggle search modal
@@ -137,6 +154,10 @@ export const InquiriesProvider = (props: Props) => {
     isModalOpen,
     setIsModalOpen,
     handleCreateInquiry,
+    showToast,
+    handleToastVisibility: closeToast,
+    handleDeleteInquiry,
+    isInquiriesLoading,
   };
 
   return (

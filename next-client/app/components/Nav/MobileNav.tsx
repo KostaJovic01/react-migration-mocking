@@ -11,12 +11,12 @@ import {
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import Sidebar from "@/app/components/organisms/Sidebar";
+import Sidebar from "@/app/components/Nav/Sidebar/Sidebar";
 import CallBellIcon from "@/app/assets/CallBellIcon";
 import ElipsisSquareIcon from "@/app/assets/ElipsisSquareIcon";
 import CompasIcon from "@/app/assets/CompasIcon";
 import KostaJImage from "@/app/assets/KostaJ.jpg";
-import Dropdown from "@/app/components/Dropdown";
+import Dropdown from "@/app/components/Nav/Dropdown";
 
 type Props = {
   children?: React.ReactNode;
