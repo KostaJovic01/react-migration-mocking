@@ -32,6 +32,11 @@ export const InquiriesProvider = (props: Props) => {
   const closeToast = () => {
     setShowToast(false);
   };
+  const closeToastTimeout = () => {
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  };
 
   // Fetch inquiries
   const fetchInquiries = useCallback(async () => {
@@ -124,6 +129,7 @@ export const InquiriesProvider = (props: Props) => {
     );
     setIsModalOpen(false);
     setShowToast(true);
+    closeToastTimeout();
   };
   const handleDeleteInquiry = (inquiry: Enquiry) => {
     if (!inquiry || !inquiries) return;
